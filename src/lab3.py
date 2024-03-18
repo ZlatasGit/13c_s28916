@@ -9,8 +9,6 @@ print(squares)
 def squares_of_range(start, end):
     range_squares = [i**2 for i in range(start, end+1)]
 
-
-
 # task 4. Utilize the math library to calculate the squareroot of each number in the generated list from the previous task.
 roots = [math.sqrt(i) for i in squares]
 print(roots)
