@@ -6,3 +6,7 @@ squares = [i**2 for i in range(1,11)]
 def squares_of_range(input_range):
     range_squares = [i**2 for i in input_range]
 
+# task 3. Create a class called SquareGenerator that has a method to generate squares for a given range of numbers.
+class SquareGenerator:
+    def squares_of_range(input_range):
+        generate_squares = [i**2 for i in input_range]
