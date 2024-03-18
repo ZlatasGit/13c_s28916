@@ -10,11 +10,15 @@ def squares_of_range(start, end):
     range_squares = [i**2 for i in range(start, end+1)]
 
 # task 3. Create a class called SquareGenerator that has a method to generate squares for a given range of numbers.
+# task 5. Handle the case where the end of the range is less than the start in the SquareGenerator class.
 class SquareGenerator:
     def squares_of_range(start, end):
+        if end<start: 
+            raise ValueError('the end of the range cannot be smaller than the start')
         generate_squares = [i**2 for i in range(start, end+1)]
 
 # task 4. Utilize the math library to calculate the squareroot of each number in the generated list from the previous task.
 roots = [math.sqrt(i) for i in squares]
 print(roots)
+
 
