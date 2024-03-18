@@ -3,3 +3,6 @@ squares = [i**2 for i in range(1,11)]
 
 # task 2. Expand the previous program by defining a function that takes a range of numbers as input and returns a list of 
 # squares for that range. e_squares(start,end))
+def squares_of_range(input_range):
+    range_squares = [i**2 for i in input_range]
+
